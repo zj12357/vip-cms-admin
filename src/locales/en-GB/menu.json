@@ -1,0 +1,14 @@
+{
+    "app.result": "Result",
+    "app.result.success": "Success",
+    "app.result.failed": "Failed",
+
+    "app.abnormal": "Abnormal",
+    "app.abnormal.403": "403",
+    "app.abnormal.404": "404",
+    "app.abnormal.500": "500",
+
+    "app.user": "User",
+    "app.user.center": "User Center",
+    "app.user.settings": "User Settings"
+}

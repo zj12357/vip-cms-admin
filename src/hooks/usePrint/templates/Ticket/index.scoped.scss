@@ -1,0 +1,40 @@
+.print-box {
+    max-width: 200px;
+    padding: 10px 0 15px;
+    color: #000;
+    font-size: 12px;
+    font-family: '黑体';
+
+    .title {
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 10px;
+
+        .item {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            line-height: 24px;
+            column-gap: 3px;
+
+            .label {
+                flex: 0 0 35%;
+                max-width: 35%;
+                font-weight: 600;
+                white-space: nowrap;
+                text-align: right;
+            }
+
+            .value {
+                flex: 0 0 65%;
+                max-width: 65%;
+                text-align: left;
+            }
+        }
+    }
+}

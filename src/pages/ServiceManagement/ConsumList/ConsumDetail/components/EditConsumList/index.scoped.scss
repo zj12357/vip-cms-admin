@@ -1,0 +1,138 @@
+.a-top {
+    @include flexBetweenCenter();
+
+    .a-venue-name {
+        width: 50%;
+        font-size: 28px;
+    }
+}
+
+.a-table {
+    height: 320px;
+    overflow-y: auto;
+    border: 1px solid #f0f0f0;
+
+    @include flexBetweenStart();
+
+    .a-table-left {
+        width: 45%;
+        height: 100%;
+        border-right: 1px solid #f0f0f0;
+
+        @include flexColumnBetweenStart();
+
+        // position: relative;
+        .a-table-left-tab {
+            @include flexBetweenCenter();
+
+            width: 100%;
+            border-bottom: 1px solid #f0f0f0;
+
+            .a-table-item {
+                flex: auto;
+                height: 40px;
+                padding: 0 16px;
+                line-height: 40px;
+                text-align: center;
+                cursor: pointer;
+
+                &.a-table-item-selected {
+                    background-color: #bfbfbf;
+                    transition: all 0.5s;
+                }
+
+                &:hover {
+                    background-color: #bfbfbf;
+                    transition: all 0.5s;
+                }
+            }
+        }
+
+        .a-table-content {
+            width: 100%;
+            height: calc(100% - 75px);
+            overflow-y: auto;
+
+            ::v-deep {
+                .ant-spin-nested-loading {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .a-table-config-item {
+                width: 100%;
+                height: 35px;
+
+                @include flexBetweenCenter();
+
+                .a-config-name {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                .a-item-num {
+                    @include flexCenter();
+                }
+
+                div {
+                    width: 30%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .a-table-footer {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            text-align: right;
+            background-color: #f0f0f0;
+        }
+    }
+
+    .a-table-right {
+        position: relative;
+        width: 55%;
+        height: 100%;
+
+        .a-right-title {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #bfbfbf;
+        }
+
+        .a-right-tbcontent {
+            width: 100%;
+            height: calc(100% - 75px);
+            overflow-y: auto;
+        }
+
+        .a-right-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            text-align: right;
+            background-color: #f0f0f0;
+        }
+    }
+}
+
+.a-money {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    span {
+        font-size: 14px;
+
+        &:last-child {
+            font-size: 22px;
+        }
+    }
+}

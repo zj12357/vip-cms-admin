@@ -1,0 +1,42 @@
+.l-modal-tab {
+    margin-top: -12px;
+    margin-bottom: 12px;
+
+    ::v-deep {
+        .ant-radio-group {
+            display: block;
+
+            .ant-radio-button-wrapper {
+                width: 50%;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+
+                &.ant-radio-button-wrapper-checked {
+                    background-color: #ccc;
+                    border-color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+.l-modal-tab-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    margin-bottom: 24px;
+    font-size: 14px;
+
+    .currency-list {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        align-items: center;
+
+        span {
+            margin-right: 5px;
+        }
+    }
+}

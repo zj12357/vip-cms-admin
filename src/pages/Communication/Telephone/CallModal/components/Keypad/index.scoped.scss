@@ -1,0 +1,64 @@
+::v-deep {
+    .keypad-container {
+        width: auto !important;
+        max-width: 280px;
+    }
+}
+
+.keypad {
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    color: #fafafa;
+    background-color: $primary-color;
+
+    .header {
+        height: 30px;
+    }
+
+    .display-content {
+        height: 50px;
+        margin: 10px 0 20px;
+        padding: 0 8px;
+        overflow: hidden;
+        color: #faad14;
+        font-size: 23px;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        text-align: right;
+        text-overflow: ellipsis;
+        border: 1px solid $primary-font-color;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 0 $primary-font-color inset;
+    }
+
+    .keyboard {
+        .key-btn {
+            background: $primary-font-color;
+            border-color: $primary-font-color;
+            box-shadow: 0 15px 10px -15px $primary-font-color;
+
+            &:active {
+                background-color: #faad14;
+                box-shadow: 0 0 15px 5px #8c6629;
+            }
+        }
+    }
+
+    .footer {
+        padding: 25px 0;
+
+        .call-btn {
+            background: #009500;
+            border-color: #009500;
+            box-shadow: 0 15px 10px -15px #009500;
+        }
+
+        .close-btn {
+            color: #fafafa;
+            border-color: $primary-font-color;
+            border-width: 0;
+            box-shadow: 0 0 6px 4px #484848;
+        }
+    }
+}

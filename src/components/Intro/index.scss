@@ -1,0 +1,15 @@
+//目前intro没法使用scoped模式，临时使用全局模式
+.intro-btn {
+    color: $primary-font-color;
+
+    &.introjs-disabled {
+        color: #9e9e9e;
+        background-color: inherit;
+    }
+}
+
+.intro-highlight {
+    box-shadow:
+        $primary-font-color 0 0 1px 2px,
+        rgb(33 33 33 / 50%) 0 0 0 5000px !important;
+}

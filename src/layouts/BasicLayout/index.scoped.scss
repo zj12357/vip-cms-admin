@@ -1,0 +1,20 @@
+.layout-footer {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+
+    @include flexStartCenter();
+
+    .layout-footer-logo {
+        width: 32px;
+        margin: 0 5px;
+    }
+}
+
+.header-breadcrumb {
+    margin-bottom: 8px;
+}
+
+.menu-content {
+    padding: 0 8px;
+}

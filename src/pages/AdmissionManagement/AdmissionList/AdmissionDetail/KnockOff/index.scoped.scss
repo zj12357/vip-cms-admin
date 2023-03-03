@@ -1,0 +1,62 @@
+.knock-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .knock-head-item {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+    }
+}
+
+.kock-item {
+    padding: 5px;
+
+    &.kock-item-green {
+        background: rgb(232, 246, 236);
+    }
+
+    &.kock-item-blue {
+        background: rgb(231, 233, 245);
+    }
+
+    &.kock-item-yellow {
+        background: rgb(238, 235, 225);
+    }
+
+    &.kock-item-yellowGreen {
+        background: rgb(246, 243, 231);
+    }
+
+    &.kock-item-red {
+        background: rgb(245, 230, 245);
+    }
+
+    .kock-item-title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .knock-item-right {
+        margin-bottom: 5px;
+        white-space: nowrap;
+        text-align: right;
+    }
+
+    .knock-item-center {
+        text-align: center;
+    }
+
+    .green-text {
+        color: green;
+    }
+
+    .red-text {
+        color: red;
+    }
+}

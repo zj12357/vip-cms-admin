@@ -1,0 +1,11 @@
+.m-account-info-box {
+    width: 100%;
+
+    @include flexStartCenter();
+
+    margin-top: 50px;
+
+    .m-account-info-btn {
+        margin-right: 20px;
+    }
+}

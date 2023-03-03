@@ -1,0 +1,7 @@
+.add-box {
+    width: 100%;
+
+    .add-box-item {
+        @include flexBetweenCenter();
+    }
+}

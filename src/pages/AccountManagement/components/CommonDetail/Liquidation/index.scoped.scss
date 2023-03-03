@@ -1,0 +1,9 @@
+.m-liquidation-box {
+    width: 100%;
+
+    @include flexStartCenter();
+
+    .m-liquidation-btn {
+        margin-right: 20px;
+    }
+}

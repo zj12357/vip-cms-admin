@@ -1,0 +1,12 @@
+.a-footer {
+    margin-top: 10px;
+
+    @include flexBetweenCenter();
+}
+
+::v-deep {
+    .disabled-row {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}

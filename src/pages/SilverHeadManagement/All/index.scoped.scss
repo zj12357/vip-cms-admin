@@ -1,0 +1,7 @@
+::v-deep .all-table {
+    .ant-table-cell-with-append {
+        .ant-table-row-indent {
+            display: none;
+        }
+    }
+}

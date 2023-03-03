@@ -1,0 +1,14 @@
+{
+    "app.result": "结果页",
+    "app.result.success": "成功页",
+    "app.result.failed": "失败页",
+
+    "app.abnormal": "异常页",
+    "app.abnormal.403": "403",
+    "app.abnormal.404": "404",
+    "app.abnormal.500": "500",
+
+    "app.user": "个人页",
+    "app.user.center": "个人中心",
+    "app.user.settings": "个人设置"
+}

@@ -1,0 +1,28 @@
+.container {
+    .header {
+        margin-bottom: 20px;
+
+        .search-item {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            width: 100%;
+
+            .nowrap {
+                color: rgba(0, 0, 0, 0.85);
+                font-size: 14px;
+                white-space: nowrap;
+            }
+        }
+
+        .buttonGroup {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            button:last-child {
+                margin-left: 10px;
+            }
+        }
+    }
+}

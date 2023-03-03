@@ -1,0 +1,53 @@
+.m-header-box {
+    width: 100%;
+    min-width: 1000px;
+
+    @include flexBetweenCenter();
+
+    .m-header-search-commencement {
+        flex: 1;
+
+        @include flexEndCenter();
+
+        .m-header-hall {
+            flex: 1;
+            font-weight: 800;
+            font-size: 16px;
+        }
+
+        .m-header-search {
+            @include flexStartCenter();
+
+            width: 380px;
+        }
+
+        .m-commencement-btn {
+            margin-right: 40px;
+            margin-left: 100px;
+
+            ::v-deep {
+                .ant-btn {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    .m-fullscreen {
+        @include flexCenter();
+
+        margin: 0 15px;
+    }
+
+    .header-avatar {
+        cursor: pointer;
+
+        @include flexCenter();
+
+        .header-user-name {
+            margin-left: 10px;
+            font-weight: 800;
+            font-size: 18px;
+        }
+    }
+}

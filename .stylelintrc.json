@@ -1,0 +1,22 @@
+{
+    "extends": ["stylelint-config-standard", "stylelint-config-rational-order"],
+    "plugins": ["stylelint-order"],
+    "rules": {
+        "indentation": 4,
+        "selector-pseudo-class-no-unknown": null,
+        "no-descending-specificity": null,
+        "at-rule-no-unknown": null,
+        "font-family-no-missing-generic-family-keyword": null,
+        "selector-type-no-unknown": null,
+        "no-empty-source": null,
+        "font-family-no-duplicate-names": null,
+        "function-comma-space-after": null,
+        "number-leading-zero": null,
+        "selector-pseudo-element-no-unknown": [
+            true,
+            {
+                "ignorePseudoElements": ["v-deep"]
+            }
+        ]
+    }
+}

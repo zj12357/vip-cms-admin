@@ -1,0 +1,82 @@
+.a-detail-itembox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    .a-detail-onlyready {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        padding: 8px;
+        font-size: 14px;
+
+        .a-detail-input {
+            width: 140px;
+            height: 27px;
+            padding: 6px 0;
+            color: #7a7676;
+            border-bottom: 1px solid #d9d9d9;
+        }
+    }
+}
+
+.a-detail-textarea {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.a-detail-submit {
+    float: right;
+}
+
+.kock-item {
+    width: 100%;
+    padding: 10px 5px;
+
+    ::v-deep {
+        .ant-row {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &.kock-item-blue {
+        background: rgb(198, 227, 244);
+    }
+
+    &.kock-item-green {
+        background: rgb(224, 242, 210);
+    }
+
+    &.kock-item-yellow {
+        background: rgb(240, 227, 212);
+    }
+
+    &.kock-item-purple {
+        background: rgb(201, 201, 247);
+    }
+
+    &.kock-item-purple2 {
+        background: rgb(222, 202, 247);
+    }
+
+    .kock-item-title {
+        font-weight: bold;
+    }
+
+    .knock-item-label {
+        margin: 6px;
+        font-size: 12px;
+        white-space: nowrap;
+        text-align: right;
+    }
+
+    .knock-item-value {
+        margin: 6px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}

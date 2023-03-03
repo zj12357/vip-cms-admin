@@ -1,0 +1,9 @@
+.m-customer-funds-box {
+    width: 100%;
+
+    @include flexStartCenter();
+
+    .m-customer-funds-btn {
+        margin-right: 20px;
+    }
+}

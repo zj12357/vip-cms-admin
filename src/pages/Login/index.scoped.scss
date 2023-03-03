@@ -1,0 +1,18 @@
+.m-login-box {
+    ::v-deep .ant-pro-form-login-page {
+        background-color: $primary-color !important;
+    }
+
+    .ip-tips {
+        width: 100%;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .login-form-box {
+        ::v-deep .ant-btn-primary {
+            display: none !important;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.m-account-company-box {
+    width: 100%;
+    height: 100%;
+
+    @include flexColumnCenter();
+
+    padding-bottom: 100px;
+
+    .m-account-company-logo {
+        width: 100%;
+
+        @include flexCenter();
+
+        margin-bottom: 60px;
+
+        .m-logo {
+            width: 300px;
+        }
+    }
+
+    .m-account-company-search {
+        width: 100%;
+
+        @include flexCenter();
+    }
+
+    .m-account-add {
+        width: 100%;
+
+        @include flexCenter();
+
+        margin-top: 40px;
+    }
+}

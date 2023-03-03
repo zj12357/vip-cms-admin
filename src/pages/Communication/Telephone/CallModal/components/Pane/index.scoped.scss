@@ -1,0 +1,92 @@
+@keyframes shining {
+    0% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.call-modal-pane {
+    flex-direction: column;
+    height: 100%;
+
+    .pane-header {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        color: #fafafa;
+        background-color: #bfa160;
+
+        .time {
+            min-width: 65px;
+        }
+
+        .forbidden {
+            color: red;
+        }
+
+        .allowed {
+            color: #fafafa;
+        }
+    }
+
+    .pane-bind {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .pane-body {
+        flex: 1;
+        overflow-y: auto;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 6%) inset;
+
+        .seat-logs {
+            width: 100%;
+            margin: 8px;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+
+            .title {
+                margin-bottom: 8px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .log-item {
+                margin-top: 6px;
+            }
+        }
+    }
+
+    .pane-footer {
+        align-content: space-evenly;
+        height: 120px;
+        background-color: #f2f0e4;
+
+        .btn-box {
+            padding: 0 15px;
+
+            .btn {
+                &.light {
+                    background: $primary-font-color;
+                    border-color: $primary-font-color;
+                    box-shadow: 0 15px 10px -15px $primary-font-color;
+                }
+
+                &.fail {
+                    background: $primary-error-color;
+                    animation: shining 1s linear infinite;
+                }
+            }
+        }
+    }
+}

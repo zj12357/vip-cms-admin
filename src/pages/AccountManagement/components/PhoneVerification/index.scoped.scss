@@ -1,0 +1,33 @@
+@keyframes shining {
+    0% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.btn {
+    &.progress {
+        color: #fff;
+        background: $primary-font-color;
+        border-color: $primary-font-color;
+        box-shadow: 0 15px 10px -15px $primary-font-color;
+        animation: shining 1s linear infinite;
+    }
+
+    &.fail {
+        color: #fff;
+        background: $primary-error-color;
+    }
+
+    &.success {
+        color: #fff;
+        background: $primary-success-color;
+    }
+}

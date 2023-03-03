@@ -1,0 +1,8 @@
+::v-deep .ant-spin-nested-loading {
+    width: calc(100% - 8px);
+}
+
+::v-deep .ant-spin-container {
+    display: flex;
+    flex-flow: row wrap;
+}

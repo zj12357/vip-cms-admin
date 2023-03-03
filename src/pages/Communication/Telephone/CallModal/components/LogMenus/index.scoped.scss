@@ -1,0 +1,118 @@
+@keyframes wobble {
+    0%,
+    65% {
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(6deg);
+    }
+
+    75% {
+        transform: rotate(-6deg);
+    }
+
+    80% {
+        transform: rotate(6deg);
+    }
+
+    85% {
+        transform: rotate(-6deg);
+    }
+
+    90% {
+        transform: rotate(6deg);
+    }
+
+    95% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.log-menus {
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    overflow-y: scroll;
+
+    ::v-deep {
+        .icon {
+            color: $primary-success-color;
+            font-size: 28px;
+        }
+
+        .item-label {
+            line-height: 24px;
+
+            .right {
+                text-align: right;
+            }
+        }
+
+        .in-service {
+            .icon {
+                color: $primary-success-color;
+
+                &.ringing {
+                    animation: wobble 3s 0s infinite;
+                }
+            }
+
+            .status {
+                color: $primary-success-color;
+            }
+        }
+
+        .complete {
+            .icon {
+                color: $primary-a-active-font-color;
+            }
+
+            .status {
+                .text {
+                    margin-right: 6px;
+                }
+            }
+        }
+
+        .missed {
+            .icon {
+                color: $primary-error-color;
+            }
+
+            .status {
+                color: $primary-error-color;
+            }
+        }
+
+        .ant-menu-submenu {
+            box-shadow: 0 5px 15px rgb(0 0 0 / 2%);
+        }
+
+        .ant-menu-inline {
+            box-shadow: 0 5px 15px rgb(0 0 0 / 3%) inset;
+
+            .ant-menu-item {
+                padding: 30px 15px 30px 10px !important;
+                box-shadow: 0 5px 30px rgb(0 0 0 / 3%);
+
+                &:hover {
+                    color: inherit;
+                    background-color: #fff;
+                    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+                    transition: 0.15s;
+                }
+            }
+
+            .ant-menu-item-selected {
+                color: inherit !important;
+                background-color: #fff;
+                box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
+            }
+        }
+    }
+}

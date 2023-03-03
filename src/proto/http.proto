@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+//protoc  -I=./  resultmodel.proto --go_out=plugins=grpc:./
+//命名空间
+package resultmodel;
+option go_package="./;resultmodel";
+//
+service Method {
+  rpc Post (Para) returns (Res) {
+  }
+}
+//参数
+message Para {
+  string action=1;
+  string token=2;
+  string data = 3;
+}
+
+//结果
+message Res {
+  int32 code = 1;
+  string msg = 2;
+  int64 count = 3;
+  string data= 4;
+}

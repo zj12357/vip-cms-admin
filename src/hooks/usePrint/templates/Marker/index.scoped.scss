@@ -1,0 +1,73 @@
+.print-box {
+    width: 520px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: #000;
+    // color: #383838;
+    font-family: '黑体';
+
+    .print-date,
+    .print-id {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        padding-left: 70px;
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .print-date {
+        top: 6px;
+        padding-left: 77px;
+    }
+
+    .print-id {
+        top: 5px;
+        padding-left: 192px;
+    }
+
+    .print-content {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            // border: 1px solid black;
+            height: 34px;
+            line-height: 34px;
+            text-align: left;
+        }
+
+        .print-content {
+            width: 180px;
+            padding-left: 50px;
+            font-size: 14px;
+        }
+    }
+
+    .sign-list {
+        width: 100%;
+        margin-top: 50px;
+
+        @include flexBetweenCenter();
+
+        .sign-list-item {
+            width: 33%;
+            padding-bottom: 10px;
+
+            @include flexStartCenter();
+            // border-bottom: 1px solid black;
+        }
+
+        .sign-content {
+            padding-left: 70px;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+
+    .print-hidden {
+        visibility: hidden;
+    }
+}

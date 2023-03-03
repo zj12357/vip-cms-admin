@@ -1,0 +1,59 @@
+@import '@/assets/scss/config/setting.scss';
+
+.silver-table {
+    width: 100%;
+
+    .tr {
+        border-right: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5;
+
+        .td {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            padding: 0 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            background: #efefef;
+            border-top: 1px solid #e5e5e5;
+
+            &:last-child {
+                border-bottom: 1px solid #e5e5e5;
+            }
+
+            &.table-header {
+                color: #000;
+                font-weight: bold;
+                font-size: 18px;
+                background: #f5c37f;
+            }
+
+            &.table-title {
+                font-size: 16px;
+                background: #f7f7f7;
+            }
+
+            &.table-empty {
+                background: #fff;
+            }
+        }
+    }
+
+    .table-head {
+        .tr {
+            border-right: none;
+        }
+    }
+
+    .table-body {
+        display: flex;
+        flex: 1;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+
+        .tr {
+            flex: 1;
+        }
+    }
+}

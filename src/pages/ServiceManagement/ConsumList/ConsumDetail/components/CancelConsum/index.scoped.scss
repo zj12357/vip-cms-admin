@@ -1,0 +1,61 @@
+.a-top {
+    @include flexStart();
+
+    flex-wrap: wrap;
+
+    .a-label {
+        flex-shrink: 0;
+        width: 33.33%;
+        margin-bottom: 10px;
+    }
+}
+
+.a-table {
+    height: 320px;
+    overflow-y: auto;
+    border: 1px solid #f0f0f0;
+
+    @include flexBetweenStart();
+
+    .a-table-right {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .a-right-title {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #bfbfbf;
+        }
+
+        .a-right-tbcontent {
+            width: 100%;
+            height: calc(100% - 40px);
+        }
+
+        ::v-deep {
+            .disabled-row {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+        }
+
+        .a-right-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            text-align: right;
+            background-color: #f0f0f0;
+        }
+    }
+}
+
+.a-footer {
+    margin-top: 10px;
+
+    @include flexBetweenCenter();
+}
